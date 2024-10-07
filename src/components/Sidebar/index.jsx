@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faBookBookmark, faEllipsisH, faEnvelope, faHome, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faBookBookmark, faEllipsisH, faEnvelope, faFeatherAlt, faHome, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faHashtag } from '@fortawesome/free-solid-svg-icons/faHashtag';
 import PropTypes from 'prop-types';
@@ -35,6 +35,13 @@ export function Sidebar() {
         <NavItem icon={faUser} text="Profile" />
         <NavItem icon={faEllipsisH} text="More" />
       </nav>
+      <button className='bg-blue-400 text-white rounded-full font-bold px-4 py-3 mt-4 w-full  hover:bg-blue-600 transition duration-200'>
+      <FontAwesomeIcon
+        icon={faFeatherAlt}
+        className=" inline xl:hidden"
+      />
+      <span className='hidden xl:inline '>Twitter</span>
+      </button>
     </div>
   );
 }
