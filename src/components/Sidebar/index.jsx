@@ -38,8 +38,7 @@ export function Sidebar() {
       <button className='bg-blue-400 text-white rounded-full font-bold px-4 py-3 mt-4 w-full  hover:bg-blue-600 transition duration-200'>
       <FontAwesomeIcon
         icon={faFeatherAlt}
-        className=" inline xl:hidden"
-      />
+        className="text-white inline xl:hidden"/>
       <span className='hidden xl:inline '>Twitter</span>
       </button>
     </div>

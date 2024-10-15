@@ -6,6 +6,8 @@ import { getAvatar, getRandomImage } from "./utils/generateImagens"
 import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
+import { TrendItem } from "./components/TrendItem"
+import { FollowItem } from "./components/FollowItem"
 
 function App() {
  const [tweets, setTweets] = useState([])
@@ -95,6 +97,21 @@ function App() {
             <h2 className="font-bold text-xl mb-4">Subscribe to Premium</h2>
             <p className="text-gray-500 mb-4">Unlock the full experience with Premium! Subscribe today and enjoy exclusive features, ad-free content, and early access to new releases. Upgrade now for the best experience!</p>
             <button className="bg-blue-400 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition duration-200">Subscribe</button>
+          </div>
+          <div className="bg-gray-800 rounded-xl mt-4 p-4">
+            <h2 className="font-bold text-xl mb-4">Whats happening</h2>
+            <TrendItem category="NFL * LIVE" name="Cardinals at Bills" />
+            <TrendItem category="Esport * Trending" name="Anthony Richard" />
+            <TrendItem category="Anime * Trending" name="Luíz dos Anjos" tweeCount="10,657"/>
+            <TrendItem category="Futebol * LIVE" name="Édna dos Anjos" tweeCount="7,062"/>
+            <TrendItem category="Champions League * LIVE" name="Adriano dos Anjos" tweeCount="1,655"/>
+            <TrendItem category="MMA * LIVE" name="Bryce Young"tweeCount="2,605"/>
+            <TrendItem category="Brasileirão * LIVE" name="Daboll" tweeCount="2,025"/>
+          </div>
+          <div className="bg-gray-800 rounded-xl mt-4 p-4"> 
+          <h2 className="font-bold text-xl mb-4">Who to follow</h2>
+          <FollowItem name = "Elon Musk" username="Elonmusk"/>
+          <FollowItem name = "Bill Gates" username="BillGates"/>
           </div>
         </div>
       </aside>
