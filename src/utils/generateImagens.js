@@ -6,7 +6,7 @@ export const getAvatar = (email) => {
 }
 
 export const getRandomImage = () => {
-    return `https:picsum.photos/600/400?random=${Math.random()}`
+    return `https://picsum.photos/600/400?random=${Math.random()}`
 };
 
 
